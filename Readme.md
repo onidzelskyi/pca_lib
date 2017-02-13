@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## Install library ##
 ```bash
-pip install pcalib
+pip install .
 ```
 
 ## Run tests ##

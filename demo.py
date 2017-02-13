@@ -6,7 +6,7 @@ from pcalib import pca_svd, pca_eig
 
 
 def main():
-    df = pd.read_csv('price_csv/yahooBars_GLD_2.csv')
+    df = pd.read_csv('tests/yahooBars_GLD_2.csv')
     x = df.ix[:, 1:].values
 
     x_reduced, _ = pca_svd(x)
