@@ -20,4 +20,4 @@ class TestPCA(TestCase):
         """Check if reduced matrices are equal to 4 digit after point for two PCA methods."""
         x_reduced_svd, _ = pca_svd(self.x)
         x_reduced_eig, _ = pca_eig(self.x)
-        np.testing.assert_almost_equal(x_reduced_eig, x_reduced_svd, decimal=5)
+        np.testing.assert_almost_equal(x_reduced_eig, x_reduced_svd, decimal=4)
