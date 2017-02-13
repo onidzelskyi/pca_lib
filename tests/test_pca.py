@@ -17,7 +17,7 @@ class TestPCA(TestCase):
         self.x = np.array(array)
 
     def test_pca_methods_are_equal(self):
-        """Check if reduced matrices are equal to 5 digit after point for two PCA methods."""
+        """Check if reduced matrices are equal to 4 digit after point for two PCA methods."""
         x_reduced_svd, _ = pca_svd(self.x)
         x_reduced_eig, _ = pca_eig(self.x)
-        np.testing.assert_array_almost_equal_nulp(x_reduced_eig, x_reduced_svd, 5)
+        np.testing.assert_array_almost_equal_nulp(x_reduced_eig, x_reduced_svd, 4)
