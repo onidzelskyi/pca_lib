@@ -39,6 +39,11 @@ mkvirtualenv -p python3.5 pca
 pip install -r requirements.txt
 ```
 
+## Install library ##
+```bash
+pip install pcalib
+```
+
 ## Run tests ##
 
 ```bash
